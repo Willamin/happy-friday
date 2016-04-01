@@ -1,0 +1,8 @@
+[Unit]
+Description=Happy Friday task
+
+[Service]
+Type=oneshot
+WorkingDirectory=/srv/http/happy-friday
+EnvironmentFile=/srv/http/happy-friday/.env
+ExecStart=/bin/bash -lc 'bin/rake friday'
