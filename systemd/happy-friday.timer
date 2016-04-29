@@ -2,7 +2,7 @@
 Description=Send a "Happy Friday!" notification every Friday at 09:00.
 
 [Timer]
-OnCalendar=friday 09:00
+OnCalendar=friday 07:00
 Persistent=true
 
 [Install]
