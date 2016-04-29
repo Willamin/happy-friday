@@ -8,5 +8,5 @@ task :friday do
     username: 'rebecca'
   )
 
-  notifier.ping 'Happy Friday, @everyone! https://www.youtube.com/watch?v=kfVsfOSbJY0'
+  notifier.ping 'Happy Friday,  <!everyone>! https://www.youtube.com/watch?v=kfVsfOSbJY0'
 end
