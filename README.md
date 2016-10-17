@@ -32,14 +32,14 @@ $ cargo build
 $ cargo run
 ```
 
-# Compiling on Amazon Linux
+# Compiling on Amazon Linux for AWS Lambda
 
-By compiling this application on an Amazon Linux AMI, you have a much better
-chance at binary compatibility with the AWS Lambda service.
+By compiling this application on a recent Amazon Linux AMI, you have a much
+better chance at binary compatibility with the AWS Lambda service.
 
 ```bash
 # Install development tools
-$ sudo yum install git
+$ sudo yum install git openssl-devel
 $ sudo yum groupinstall "Development Tools"
 $ sudo yum --enablerepo=amzn-preview install rust
 
