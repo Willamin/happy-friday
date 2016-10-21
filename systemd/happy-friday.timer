@@ -1,0 +1,9 @@
+[Unit]
+Description=Send a "Happy Friday!" notification every Friday at 09:00.
+
+[Timer]
+OnCalendar=Fri 13:00 UTC
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,8 @@
+[Unit]
+Description=Happy Friday task
+
+[Service]
+Type=oneshot
+User=nobody
+Group=nobody
+ExecStart=/opt/happy-friday/target/release/happy-friday

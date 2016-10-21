@@ -2,9 +2,9 @@
 
 Slack notifier/ping application. The goal of this project is to produce a
 single, (mostly) standalone binary which is able to run on most modern Linux
-distributions (and by extension, AWS Lambda).
+distributions.
 
-It is scheduled to run on Fridays at 07:00 eastern time.
+It is scheduled to run on Fridays at 09:00 eastern time.
 
 # Example
 
