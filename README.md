@@ -11,9 +11,8 @@ It is scheduled to run on Fridays at 09:00 eastern time.
 
 # System requirements
 
- - [Rust][rust] `=1.12.0`
- - [Cargo][cargo] `=0.13.0`
- - make
+ - [Rust][rust] `~> 1.12.0` with Cargo
+ - GNU make
 
 # Getting started
 
@@ -33,3 +32,5 @@ $ cargo run
 # Install services and compiled binary
 $ make DESTDIR="/" install
 ```
+
+[rust]: https://www.rust-lang.org/
