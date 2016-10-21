@@ -5,4 +5,4 @@ Description=Happy Friday task
 Type=oneshot
 User=nobody
 Group=nobody
-ExecStart=/opt/happy-friday/target/release/happy-friday
+ExecStart=/usr/bin/happy-friday

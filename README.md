@@ -1,8 +1,7 @@
 # Happy Friday!
 
-Slack notifier/ping application. The goal of this project is to produce a
-single, (mostly) standalone binary which is able to run on most modern Linux
-distributions.
+Slack notifier/ping application. The goal of this project is to produce a single
+binary which is able to run on most modern Linux distributions.
 
 It is scheduled to run on Fridays at 09:00 eastern time.
 
@@ -30,31 +29,7 @@ $ cargo build
 
 # Run the application
 $ cargo run
+
+# Install services and compiled binary
+$ make DESTDIR="/" install
 ```
-
-# Compiling on Amazon Linux for AWS Lambda
-
-By compiling this application on a recent Amazon Linux AMI, you have a much
-better chance at binary compatibility with the AWS Lambda service.
-
-```bash
-# Install development tools
-$ sudo yum install git openssl-devel
-$ sudo yum groupinstall "Development Tools"
-$ sudo yum --enablerepo=amzn-preview install rust
-
-# Download and install Cargo using binaries from https://crates.io/install
-$ wget https://static.rust-lang.org/cargo-dist/cargo-nightly-x86_64-unknown-linux-gnu.tar.gz
-$ tar xvf cargo-nightly-x86_64-unknown-linux-gnu.tar.gz
-$ cd cargo-nightly-x86_64-unknown-linux-gnu
-$ sudo ./install.sh
-
-# Navigate to your cloned, configured repo
-$ cd happy-friday
-
-# Package the application for AWS lambda
-$ make
-```
-
-[rust]: https://www.rust-lang.org/
-[cargo]: https://github.com/rust-lang/cargo
